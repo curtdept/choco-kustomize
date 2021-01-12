@@ -2,7 +2,7 @@
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # release version of kustomize: https://github.com/kubernetes-sigs/kustomize/releases
-$version = '3.8.7'
+$version = '3.9.1'
 # pattern for archive name
 $base_name = "kustomize_v$($version)_windows_amd64"
 $zip_name = $base_name + ".tar.gz"
@@ -13,8 +13,8 @@ $exe_name = "kustomize.exe"
 $url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv$($version)/$($zip_name)"
 
 # use $ checksum [exe] -t=sha256
-$archive_checksum = '56FF670EDD84CB100117472B0196AD201D63A77AD0C90C4A6927EA8168D815BF'
-$exe_checksum = 'E5EFB9E9F5FD02FCDCA12530C5817EA62ADD0E5309E5C59142F82372E934D2E1'
+$archive_checksum = '35ADF766750AC2F9FE15128218CFE53F59D3E984AB04ED2555A875496368E00B'
+$exe_checksum = '2F23F2FD044C618FB636C48F83A673C53EF5332899E719BDD6C24306F045ED0B'
 $checksum_type = 'sha256'
 
 # destinations
