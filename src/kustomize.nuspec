@@ -13,7 +13,7 @@
     <licenseUrl>https://github.com/kubernetes-sigs/kustomize/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/kubernetes-sigs/kustomize</projectSourceUrl>
-    <docsUrl>https://github.com/kubernetes-sigs/kustomize/blob/master/docs</docsUrl>
+    <docsUrl>https://github.com/kubernetes-sigs/kustomize</docsUrl>
     <tags>kustomize admin</tags>
     <summary>Kustomize lets you customize raw, template-free YAML files for multiple purposes, leaving the original YAML untouched and usable as is.</summary>
     <description>kustomize lets you customize raw, template-free YAML files for multiple purposes, leaving the original YAML untouched and usable as is.
