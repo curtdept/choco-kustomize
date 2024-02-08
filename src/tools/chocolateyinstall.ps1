@@ -2,19 +2,18 @@
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # release version of kustomize: https://github.com/kubernetes-sigs/kustomize/releases
-$version = '5.1.0'
+$version = '5.3.0'
 # pattern for archive name
 $base_name = "kustomize_v$($version)_windows_amd64"
-$zip_name = $base_name + ".tar.gz"
-$tar_name = $base_name + ".tar"
+$zip_name = $base_name + ".zip"
 $exe_name = "kustomize.exe"
 
 # only 64bit url
 $url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv$($version)/$($zip_name)"
 
 # use $ checksum [exe] -t=sha256
-$archive_checksum = 'AC48286444A33417E5251393F1B1B9972B00CFF82FD3AB8D21CA8D8C29411199'
-$exe_checksum = '167FF2F164627FF7FE73FF5D247F34DBE3F70FB74FB5A9C3F25332A3BB55B71E'
+$archive_checksum = '649C770DD9B506CEC77F3036C3374D58D86D69427F5329B28C68B49FA90188DB'
+$exe_checksum = '92B59C9658E84C931E12DFDE9204566BBD59886AF1462EFD288A8AFD08A0F112'
 $checksum_type = 'sha256'
 
 # destinations
@@ -37,13 +36,6 @@ $unzipArgs = @{
 }
 
 Get-ChocolateyUnzip @unzipArgs
-
-$unzip2Args = @{
-  fileFullPath = join-path $toolsDir $tar_name
-  destination = $toolsDir
-}
-
-Get-ChocolateyUnzip @unzip2Args
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
