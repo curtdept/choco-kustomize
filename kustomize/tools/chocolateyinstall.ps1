@@ -4,10 +4,10 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 # release version of kustomize: https://github.com/kubernetes-sigs/kustomize/releases
 
 # only 64bit url
-$url64 = 'https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.3.0/kustomize_v5.3.0_windows_amd64.zip'
+$url64 = 'https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.4.3/kustomize_v5.4.3_windows_amd64.zip'
 
 # use $ checksum [exe] -t=sha256
-$checksum64 = '649c770dd9b506cec77f3036c3374d58d86d69427f5329b28c68b49fa90188db'
+$checksum64 = '5ce680e51637bf7eed046b63601d3d4d9604a0e42ef7177c6a16a29f8e455a7f'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
