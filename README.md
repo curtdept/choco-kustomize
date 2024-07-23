@@ -1,5 +1,8 @@
 # choco-kustomize
 
+[![Chocolatey Version](https://img.shields.io/chocolatey/v/kustomize)](https://chocolatey.org/packages/kustomize)
+
+
 This repository is the source for the packaging around the [Kustomize](https://kustomize.io/).
 
 The source and releases for Kustomize are located on their [github page](https://github.com/kubernetes-sigs/kustomize).
